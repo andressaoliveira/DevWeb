@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+div,
+h1,
+h2 {
+    background-color: firebrick;
+    font-size: 50px;
+    font-family: 'Smooch', cursive;
+}
+
+a {
+    text-decoration: overline;
+}
+
+p {
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+    background-repeat: none;
+    background-position: right right;
+    background-size: contain;
+}
