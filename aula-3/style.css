@@ -22,3 +22,7 @@ p {
     background-position: right right;
     background-size: contain;
 }
+
+.container {
+    background-image: linear-gradient(to right, red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);
+}
