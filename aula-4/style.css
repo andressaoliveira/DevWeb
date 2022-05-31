@@ -1,0 +1,83 @@
+.posicao {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    position: sticky;
+    top: 100px;
+}
+
+.noticia {
+    background-color: lightgray;
+}
+
+.noticia--destacada {
+    background-color: dimgray;
+}
+
+.noticia__titulo--uppercase {
+    text-transform: uppercase;
+}
+
+.box {
+    background-color: aqua;
+    width: 400px;
+    height: 250px;
+    margin: 10px 20px;
+    padding: 20px 5px;
+    border-top: 5px solid #456789;
+    border-left: 5px solid pink;
+    border-bottom: 3px dotted blue;
+}
+
+.box-pequena {
+    /* propriedades decorativas */
+    border: solid 1px black;
+    padding: 5px;
+    display: inline-block;
+    font-size: 32px;
+    font-family: Arial;
+    /* propriedades que fazem o "problema" */
+    width: 100px;
+    height: 130px;
+    overflow: auto;
+}
+
+.teste-display {
+    /* display: none; */
+}
+
+.teste-display p {
+    background-color: yellow;
+    display: inline-block;
+}
+
+.teste-display p span {
+    background-color: green;
+    display: inline-block;
+    width: 100px;
+}
+
+ul {
+    list-style: none;
+    font-size: 0/* truque para usar inline-block*/
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
