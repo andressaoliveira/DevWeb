@@ -1,0 +1,93 @@
+#main {
+    display: flex;
+    height: 350px;
+}
+
+nav {
+    background-color: pink;
+    width: 20%;
+}
+
+aside {
+    background-color: yellow;
+    width: 20%;
+}
+
+article {
+    background-color: blue;
+    width: 60%;
+}
+
+header,
+footer {
+    height: 150px;
+    background-color: aquamarine;
+}
+
+.filho {
+    height: 100px;
+    width: 100px;
+    border: 2px dotted blue;
+}
+
+.pai-flex {
+    border: 2px solid red;
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+}
+
+#filho1 {
+    background-color: palevioletred;
+}
+
+#filho2 {
+    background-color: rebeccapurple;
+}
+
+#filho3 {
+    background-color: gold;
+}
+
+#filho4 {
+    background-color: greenyellow;
+}
+
+#filho5 {
+    background-color: powderblue;
+}
+
+#layout {
+    display: flex;
+    height: 650px;
+}
+
+#principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+
+#centro {
+    display: flex;
+    height: 100%;
+}
+
+#navegacao {
+    background-color: orangered;
+}
+
+#cabecalho,
+#rodape {
+    background-color: blue;
+}
+
+#conteudo {
+    background-color: purple;
+    width: 80%;
+}
+
+#barra {
+    background-color: orange;
+    width: 20%;
+}
