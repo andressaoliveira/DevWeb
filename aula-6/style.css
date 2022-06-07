@@ -6,7 +6,7 @@
 }
 
 div {
-    border: 1px solid blue;
+    border: 1px solid rebeccapurple;
 }
 
 #grade {
@@ -92,4 +92,42 @@ aside {
     font-size: 21px;
     padding: 5px;
     background-color: yellow;
+}
+
+#desafio2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 5px;
+    grid-template-areas: "teal teal blue blue blue" "teal teal red red green" "pink pink red red brown";
+}
+
+#teal {
+    grid-area: teal;
+    background-color: teal;
+}
+
+#pink {
+    grid-area: pink;
+    background-color: pink;
+}
+
+#red {
+    grid-area: red;
+    background-color: red;
+}
+
+#blue {
+    grid-area: blue;
+    background-color: blue;
+}
+
+#green {
+    grid-area: green;
+    background-color: green;
+}
+
+#brown {
+    grid-area: brown;
+    background-color: brown;
 }
