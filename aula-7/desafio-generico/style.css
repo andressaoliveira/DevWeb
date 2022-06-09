@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "header" "content" "sign-up" "feature1" "feature2" "feature3";
+}
+
+.item,
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "content content" "sign-up feature1" "feature2 feature3";
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "header header header" "feature1 feature3 feature2" "sign-up sign-up sign-up" "content content content";
+    }
+}
