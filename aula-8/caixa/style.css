@@ -1,0 +1,36 @@
+div.animame {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.9);
+    border: solid 1px;
+}
+
+div {
+    position: relative;
+    Left: 200px;
+    top: 50px;
+}
+
+div:not(.animame) {
+    border: solid 1px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 207px;
+    top: 57px;
+}
+
+@keyframes animacao {
+    from {}
+    to {
+        /* testar propriedades */
+        transform: skewY(25deg)
+    }
+}
+
+
+/* configuração inicial */
+
+.animame {
+    animation: animacao 1s linear 3s infinite alternate;
+}

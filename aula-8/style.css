@@ -1,0 +1,120 @@
+#gradiente {
+    display: flex;
+}
+
+#gradiente div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+#gradiente-1 {
+    background-image: linear-gradient(red, yellow);
+}
+
+#gradiente-3 {
+    background-image: linear-gradient(to bottom, red, yellow);
+}
+
+#gradiente-2 {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+#gradiente-4 {
+    background-image: linear-gradient(to left, red, yellow);
+}
+
+#gradiente-5 {
+    background-image: linear-gradient(to top, red, yellow);
+}
+
+#gradiente-6 {
+    background-image: radial-gradient(red, yellow)
+}
+
+#gradiente-7 {
+    background-image: linear-gradient(to right, red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);
+}
+
+#translate {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translate(10px, 20px);
+}
+
+#rotate {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transform: rotate(30deg);
+}
+
+#rotate-x {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    transform: rotateX(30deg);
+}
+
+#rotate-y {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transform: rotateY(30deg);
+}
+
+#conteudo {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: all 3s;
+}
+
+#conteudo:hover {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    /* display: none; */
+}
+
+input {
+    width: 100px;
+    height: 100px;
+    transition: all 2s;
+}
+
+input:focus {
+    width: 200px;
+    font-size: 36px;
+}
+
+@keyframes um_efeito {
+    0% {
+        width: 100px;
+    }
+    25% {
+        width: 300px;
+    }
+    50% {
+        width: 200px;
+        background-color: red;
+    }
+    75% {
+        width: 300px;
+    }
+    100% {
+        width: 100px;
+        background-color: green;
+    }
+}
+
+#exemplo {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: um_efeito;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    /* animation-delay: 3s; */
+}
