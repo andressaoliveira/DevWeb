@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: #999999;
+}
+
+a:hover {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: yellow;
+    color: black;
+}
+
+div:not(.pai) {
+    padding: 0 40px;
+}
+
+.pai div:last-child {
+    font-weight: bold;
+}
