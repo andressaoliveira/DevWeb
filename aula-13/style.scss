@@ -1,0 +1,19 @@
+@import 'base.scss';
+ul {
+    list-style: none;
+    li {
+        padding: 15px;
+        display: inline-block;
+        $rosa: rgb(222, 33, 247);
+        a {
+            text-decoration: none;
+            font-size: $fonteTamanhoPadrao;
+            color: $vermelho;
+            &:hover {
+                color: $vermelhoEscuro;
+            }
+        }
+    }
+}
+
+@import 'botao.scss';
