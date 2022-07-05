@@ -1,0 +1,71 @@
+@import 'base.scss';
+.box_um {
+    background-color: $blue;
+    width: calc($largura*2);
+}
+
+.box_dois {
+    background-color: $green;
+    width: calc($largura/2)-50;
+}
+
+$visao:desktop;
+body {
+    @if $visao==desktop {
+        background-color: blue;
+    }
+    @else {
+        background-color: yellow;
+    }
+}
+
+@for $i from 1 through 10 {
+    .col-#{$i} {
+        width: 10% * $i;
+    }
+}
+
+$colors: blue,
+yellow,
+black;
+@each $color in $colors {
+    #{"#"+$color} {
+        color:#{$color};
+    }
+}
+
+$redes: ( twitter: #55acee, facebook: #3a5795, send-mail: #C25E30);
+@each $rede,
+$color in $redes {
+    .btn--#{$rede} {
+        background-color: $color;
+    }
+}
+
+$estilos: ( cor: #3673D9, centro: left, tFonte: 35px, 1rem: 1rem);
+div {
+    background-color: map-get($estilos, cor);
+    text-align: map-get($estilos, centro);
+}
+
+.boton {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.boton--aceitar {
+    @extend .boton;
+    background-color: green;
+    color: yellow;
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.box {
+    @include sizes(500px, 50px);
+}
